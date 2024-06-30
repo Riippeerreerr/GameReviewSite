@@ -1,0 +1,29 @@
+/* ImageWithText.module.css */
+.showcaseContainer {
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    align-items: flex-start; /* Aligns items at the start of the container */
+    gap: 1rem; /* Adds space between the items */
+  }
+  
+  .showcaseContainer.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container */
+  }
+  
+  .showcasetextOverlay {
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0; /* Positions the text at the bottom of the image */
+    width: 100%; /* Makes the text box span the width of the container */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    color: white;
+    padding: 0.5rem; /* Adjusted padding for a smaller text box */
+    text-align: center;
+    font-size: 1rem; /* Adjusted font size as needed */
+    box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+  }
+  
