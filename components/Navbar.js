@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Navbar.css"
 import Button from './Button';
+import Link from 'next/link';
 
 export default function Navbar(){
   return (
@@ -8,7 +9,9 @@ export default function Navbar(){
         <div className="container">
             <ul className="nav-links">
             <li>
-                <Button>Home</Button>
+                <Link href="/">
+                        <Button>Home</Button>
+                </Link>
             </li>
             </ul>
         </div>
@@ -21,8 +24,11 @@ export default function Navbar(){
         <div>
                 <Button>Search</Button>
         </div>
-        <div>
+        <div>   
+        <Link href='/login'>
                 <Button>Log In</Button>
+        </Link>
+        
         </div>
     </nav>
   )
