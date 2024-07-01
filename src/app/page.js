@@ -4,6 +4,7 @@ import Navbar from "../../components/Navbar.js";
 import NavbarShowCase from "../../components/NavbarShowCases"
 import Divider from "../../components/Divider.js";
 import Divider_grey from "../../components/categories/Divider_grey";
+import Button from "../../components/Button";
 
 export default function Home() {
   return (
@@ -82,6 +83,9 @@ export default function Home() {
           responses and numbers we’ve seen, though, we’d say a lot of you had a right lovely time of it."
           />
       </div>
+        <Button>
+          GEt daTA
+        </Button>
     </main>
     </>
   );
