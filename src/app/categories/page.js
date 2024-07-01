@@ -7,7 +7,7 @@ import './categories-page.css'
 async function getHello() {
     const data = await fetch("http://localhost:3000/api/getgames");
     if (!data.ok) {
-        throw new Error("Failed to fetch");
+        console.log("nu s-a conectat")
     }
 
     return data.json();
