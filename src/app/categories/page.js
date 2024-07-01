@@ -25,7 +25,7 @@ export default async function Categories() {
             <Divider_grey />
             <div>
                 <Category
-                    imageSrc='./rts_example.png'
+                    imageSrc='./static/images/rts_example.png'
                     title="RTS"
                     description={data.message}
                 />
@@ -33,7 +33,7 @@ export default async function Categories() {
             <Divider_grey />
             <div>
                 <Category
-                    imageSrc='./mmorpg.jpeg'
+                    imageSrc='./static/images/mmorpg.jpeg'
                     title="MMORPG"
                     description="Massively Multiplayer Online Role-Playing Games (MMORPGs) transport players into expansive 
                 virtual worlds where epic adventures await. Embark on quests, forge alliances, and engage in dynamic 
@@ -47,7 +47,7 @@ export default async function Categories() {
             <Divider_grey />
             <div>
                 <Category
-                    imageSrc='./moba.jpeg'
+                    imageSrc='./static/images/moba.jpeg'
                     title="MOBA"
                     description="Multiplayer Online Battle Arena (MOBA) games thrust players into intense, strategic showdowns 
                 where teamwork and skill determine victory. Choose from a diverse roster of heroes, each with unique abilities 
@@ -62,7 +62,7 @@ export default async function Categories() {
             <Divider_grey />
             <div>
                 <Category
-                    imageSrc='./shooter.jpeg'
+                    imageSrc='./static/images/shooter.jpeg'
                     title="Shooter"
                     description="Shooter games immerse players in high-octane action where skill, precision, and reflexes are 
                 paramount. Whether in realistic military settings or futuristic worlds, players wield a variety of firearms
@@ -77,7 +77,7 @@ export default async function Categories() {
             <Divider_grey />
             <div>
                 <Category
-                    imageSrc='./mk.jpeg'
+                    imageSrc='./static/images/mk.jpeg'
                     title="Fighting"
                     description="Fighting games deliver heart-pounding, one-on-one combat where players face off in skillful, 
                 fast-paced battles. Choose from a diverse roster of characters, each with unique fighting styles, special 
@@ -92,7 +92,7 @@ export default async function Categories() {
             <Divider_grey />
             <div>
                 <Category
-                    imageSrc='./simulation.jpeg'
+                    imageSrc='./static/images/simulation.jpeg'
                     title="Simulation"
                     description="Simulation games immerse players in detailed, realistic worlds where they can experience 
                 activities and scenarios mirroring real life. From managing cities, farms, and businesses to piloting 

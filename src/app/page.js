@@ -13,7 +13,7 @@ export default function Home() {
       <div className={styles.imageContainer}>
         <Image
           className={styles.image}
-          src={require('../../public/panorama.jpg')}
+          src={require('../../public/static/images/panorama.jpg')}
           alt="Panorama"
           layout="responsive" // Makes the image responsive
           width={1080} // Provide the width of your image
@@ -28,7 +28,7 @@ export default function Home() {
       <h1>News</h1>
       <div className={styles.showCaseContainer}>
         <NavbarShowCase
-        imageSrc='./CallofDuty_mock.jpg'
+        imageSrc='./static/images/CallofDuty_mock.jpg'
         title="Call of Duty: Modern Warfare maps are heading to Call of Duty: Mobile"
         text="Call of Duty: Modern Warfare maps are making their way to Call of Duty Mobile Season 2: Day of Reckoning.Two 
         of Modern Warfare's maps will be making their way to the mobile version of the franchise when Day of Reckoning 
@@ -40,7 +40,7 @@ export default function Home() {
          <Divider_grey />
          <div className={styles.showCaseContainer}>
         <NavbarShowCase
-        imageSrc='./StarCraft2.jpg'
+        imageSrc='./static/images/StarCraft2.jpg'
         title="DeepMind’s StarCraft 2 AI is now better than 99.8 percent of all human players"
         text="DeepMind today announced a new milestone for its artificial intelligence agents trained to play the 
         Blizzard Entertainment game StarCraft II. The Google-owned AI lab’s more sophisticated software, still called 
@@ -57,7 +57,7 @@ export default function Home() {
          <Divider_grey />
          <div className={styles.showCaseContainer}>
          <NavbarShowCase
-        imageSrc='./Overwatch2_mock.jpg'
+        imageSrc='./static/images/Overwatch2_mock.jpg'
         title="DIRECTOR'S TAKE: TALKING TANKS AND UPCOMING HERO BALANCE CHANGES"
         text="Hey everyone! It's been a bit since our last Director's Take. We’ve missed a few of these in recent months. 
         Sorry for the gap, speaking to all of you will continue to be a priority for the team. Let's talk about tanks. 
@@ -72,7 +72,7 @@ export default function Home() {
       <Divider_grey />
       <div className={styles.showCaseContainer}>
         <NavbarShowCase
-          imageSrc='./SeaofThieves.jpg'
+          imageSrc='./static/images/SeaofThieves.jpg'
           title="A LOOK BACK AT SEASON 12 COMMUNITY WEEKEND"
           text="Hello! It’s been a while since we’ve had one of these lookbacks, so just give us a second to dust off the 
           inkwell and make sure we didn’t leave any pineapple and Pondie sandwiches lurking under the pile of unsolved 

@@ -7,7 +7,7 @@ export default function Search(){
         <>
         <Navbar />
         <Article
-        imageSrc="./letmesoloher.png"
+        imageSrc="./static/images/letmesoloher.png"
         title='Elden Ring hero Let Me Solo Her says Shadow of the Erdtree isn`t too hard, "many people are just too harsh" and should "use everything at their disposal"'
         author="Austin Wood"
         date="June 28, 2024"
@@ -29,7 +29,7 @@ export default function Search(){
         />
         <Divider_grey />
         <Article
-        imageSrc="./bounty_star_art.jpg"
+        imageSrc="./static/images/bounty_star_art.jpg"
         title='Bounty Star feels like Armored Core in the Wild West, and while the combat`s great it`s the Monster Hunter and Stardew Valley vibes that really grabbed me'
         author="Dustin Bailey"
         date="July 1, 2024"
@@ -56,7 +56,7 @@ export default function Search(){
         />
         <Divider_grey />
         <Article
-        imageSrc="./starfield.jpeg"
+        imageSrc="./static/images/starfield.jpeg"
         title='Starfield`s Premium Edition gets discounted to $70, which basically makes the Shattered Space DLC free before it even launches'
         author="Jordan Gerblick"
         date="June 29, 2024"
