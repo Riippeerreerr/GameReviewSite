@@ -1,19 +1,17 @@
 import Image from 'next/image';
-import styles from './NavbarShowCase.css';
+import './NavbarShowCase.css';
+import Button from './Button';
+import Link from 'next/link';
 
-export default function NavbarShowCase({ src, alt, text }) {
+export default function NavbarShowCase({ imageSrc, title, text }) {
   return (
-    <div className={styles.showcasecontainer}>
-      <Image
-        className={styles.image}
-        src={src}
-        alt={alt}
-        layout="compress" // Ensures the image fills the container
-        objectFit="cover" // Ensures the image covers the entire container
-      />
-      <div className={styles.showcasetextOverlay}>
-        {text}
+      <div className="centered-component">
+        <img src={imageSrc} alt="Centered" className="centered-image" />
+        <h1 className="centered-title">{title}</h1>
+        <div className="article-text">{text}</div>
+        <div className='button'>
+          <Link href='./'><Button>Read More!</Button></Link>
+        </div>
       </div>
-    </div>
-  );
+    );
 }

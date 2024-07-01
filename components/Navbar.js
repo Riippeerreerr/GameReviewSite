@@ -16,19 +16,17 @@ export default function Navbar(){
             </ul>
         </div>
         <div>
-                <Button>Categorii</Button>
+                <Link href='/categories'><Button>Categorii</Button></Link>
+                
         </div>
         <div>
-                <Button>New Releases</Button>
+                <Link href="/newreleases"><Button>New Releases</Button></Link>
         </div>
         <div>
-                <Button>Search</Button>
+                <Link href='/search'><Button>Search</Button></Link>
         </div>
         <div>   
-        <Link href='/login'>
-                <Button>Log In</Button>
-        </Link>
-        
+                <Link href='/login'><Button>Log In</Button></Link>
         </div>
     </nav>
   )

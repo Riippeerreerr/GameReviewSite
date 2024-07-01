@@ -1,0 +1,36 @@
+/* src/MyComponent.css */
+.my-component {
+    display: flex;
+    border: 2px solid #e94f37;
+    padding: 20px;
+    background-color: #393e41;
+    color: #f6f7eb;
+    align-items: flex-start;
+    border-radius: 2%;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .my-image {
+    border: 2px solid #e94f37;
+    width: 30%; /* 75% of the container width minus padding */
+    max-width: 60%; /* Ensure the image does not exceed its container width */
+    height: auto; /* Allow the height to adjust proportionally */
+  }
+  
+  .text-container {
+    flex: 1; /* Allow text container to expand to fill remaining space */
+    margin-left: 20px; /* Add some space between image and text */
+  }
+  
+  .title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
+  .description {
+    margin: 0;
+    font-size: 16px;
+  }
+  

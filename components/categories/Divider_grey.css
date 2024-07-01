@@ -1,0 +1,8 @@
+.divider_grey {
+    background-color: #393e41;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
