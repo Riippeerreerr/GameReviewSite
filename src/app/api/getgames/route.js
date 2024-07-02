@@ -1,15 +1,7 @@
-import pool from "../../../../lib/db";
 import { NextResponse } from "next/server";
+import { sql } from "@vercel/postgres";
 
-export default async function GET(req){
-        try{
-        let client= await pool.connect();
-        console.log(client)
-        const result = await client.query('SELECT * FROM GAMES');
-        // res.status(200).json(r'esult.rows);
-        console.log(result)
-        return NextResponse.json(result.rows)}
-        catch (error){
-                return NextResponse.json({message:"nu merge"})
-        }
+export async function GET(request){
+        const games= await sql`SELECT * FROM Games`;
+        return NextResponse.json({games},{status:200});
 }
