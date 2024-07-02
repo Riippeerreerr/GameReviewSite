@@ -1,0 +1,31 @@
+/* SearchForm.css */
+
+.search-container {
+    padding: 1%;
+    border: 2px solid #e94f37;
+    color: #f6f7eb;
+    width: 30%;
+    border-radius: 2%;
+    outline-width: 4%;
+    background-color: #e94f37;
+  }
+  
+  .search-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .search-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .search-form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 80%;
+  }
+  

@@ -23,7 +23,7 @@ export default async function Categories() {
 
     const data = await getHello();
 
-    console.log(data);
+    console.log(data.games.rows);
     return (
         <>
             <Navbar />

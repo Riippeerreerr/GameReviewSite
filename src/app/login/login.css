@@ -1,0 +1,17 @@
+.login-center{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.signup-center{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 25%;
+    margin-right: 25%;
+}

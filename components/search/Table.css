@@ -1,0 +1,33 @@
+/* SearchTable.css */
+
+table {
+    width: 65%;
+    border-collapse: collapse;
+    background-color: #e94f37; /* Background color */
+    color: #f6f7eb; /* Text color */
+    border-radius: 2%;
+}
+
+th, td {
+    border: 1px solid #393e41; /* Table lines color */
+    padding: 1%;
+    text-align: left;
+    width: 5%;
+}
+
+th {
+    background-color: #393e41;
+    color: #f6f7eb;
+}
+
+table tr:nth-child(even) {
+    background-color: #393e41;
+}
+
+table tr:hover {
+    background-color: #d44e30; /* Slightly darker shade for hover effect */
+}
+
+table {
+    border: 2px solid #e94f37; /* Outside border the color of the background */
+}
