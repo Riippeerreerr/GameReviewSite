@@ -1,9 +1,26 @@
+"use client"
 import React from 'react';
 import "./Navbar.css"
 import Button from './Button';
 import Link from 'next/link';
+import { useState,useEffect } from 'react';
 
 export default function Navbar(){
+        const [username,setUsername]=useState("");
+        useEffect(()=>{
+        if(typeof window!=="undefined"){
+                if(localStorage.getItem("username")===null)
+                    {
+                        console.log("nu exista nimic aici")
+                    }    
+                const auth = localStorage.getItem("auth");
+                if(auth){
+                const storedUserName = localStorage.getItem("username");
+                setUsername(storedUserName);
+                }
+        }
+        },[])
+
   return (
     <nav className="navbar">
         <div className="container">
@@ -28,6 +45,11 @@ export default function Navbar(){
         <div>   
                 <Link href='/login'><Button>Log In</Button></Link>
         </div>
+        { username &&(
+                <div>
+                        <Link href='/'><Button>{username}</Button></Link>
+                </div>
+        )}
     </nav>
   )
 }

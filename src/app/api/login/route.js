@@ -6,19 +6,18 @@ export async function POST(req) {
     const { username, password } = body;
     const resultat=await sql`SELECT * FROM Users WHERE username=${username} 
     AND passwordhash=${password}`
-
-    console.log(username, password);
-    console.log(resultat);
     
-    if(resultat.rows=[]){
-        console.log("nu merge autentificarea");
-        return NextResponse.json({ error:"muie postgres" }, { status: 404 });
+    if(resultat.rows.length===0){
+        console.log("Authentification failed");
+        return NextResponse.json({ error:"Invalid credentials" }, { status: 404 });
     }
-    else if(username==resultat.rows[0].username && 
-        password==resultat.rows[0].passwordhash)
+    if(username==resultat.rows[0].username && 
+        password==resultat.rows[0].passwordhash){
         console.log("Merge autentificarea")
 
-    return NextResponse.json({ message: "M-am logat" });
+        return NextResponse.json({ message: "Logged In" },{ status:200 });
+        }
+    return NextResponse.json({ error:"Invalid credentials" }, { status: 404 });
 }
 
 

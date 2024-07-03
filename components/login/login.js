@@ -2,28 +2,34 @@
 import './LoginForm.css';
 import Button from '../Button';
 import { useState } from 'react';
+import Link from 'next/link';
 
 const LoginForm = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
-  //   const handleSubmit = (event) => {
-  //     event.preventDefault();
-  //     // Here you can handle the login logic, for example, sending the credentials to the server
-  //     console.log('Username:', username);
-  //     console.log('Password:', password);
-  //   };
-
   const onClickHandle = async () => {
     console.log('Username:', username);
 
-    await fetch("http://localhost:3000/api/login", {
+    let res=await fetch("http://localhost:3000/api/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ username, password }),
     });
+
+    let data=await res.json();
+    if(data.status === 200) {
+      localStorage.setItem("auth", true);
+      localStorage.setItem("username", username);
+      console.log(username)
+      router.push('/');
+  }
+    else{
+      console.error("Login failed",data.error)
+    }
+  
   }
 
   
@@ -50,7 +56,8 @@ const LoginForm = () => {
           />
         </div>
         <div>
-          <Button onClick={onClickHandle}>Log In</Button>
+          <Link href="/"><Button onClick={onClickHandle}>Log In</Button></Link>
+          
         </div>
       </form>
     </div>

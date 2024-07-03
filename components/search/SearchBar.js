@@ -9,11 +9,17 @@ const SearchBar = () => {
   const [releaseDate, setReleaseDate] = useState('');
   const [platform, setPlatform] = useState('');
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Handle the search logic here
+  const handleSubmit = async () => {
     console.log('Search parameters:', { name, genre, releaseDate, platform });
-  };
+
+    await fetch("http://localhost:3000/api/getgames",{
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ name, genre ,releaseDate, platform }),
+    });
+  }
 
   return (
     <div className="search-container">
@@ -35,7 +41,6 @@ const SearchBar = () => {
             id="genre"
             value={genre}
             onChange={(e) => setGenre(e.target.value)}
-            required
           />
         </div>
         <div className="form-group">
@@ -45,7 +50,6 @@ const SearchBar = () => {
             id="release-date"
             value={releaseDate}
             onChange={(e) => setReleaseDate(e.target.value)}
-            required
           />
         </div>
         <div className="form-group">
@@ -55,10 +59,9 @@ const SearchBar = () => {
             id="platform"
             value={platform}
             onChange={(e) => setPlatform(e.target.value)}
-            required
           />
         </div>
-        <Button>Search</Button>
+        <Button onClick={handleSubmit}>Search</Button>
       </form>
     </div>
   );
